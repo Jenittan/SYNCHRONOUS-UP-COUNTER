@@ -1,9 +1,7 @@
-**NAME:JENITTAN JOSE J B**
 
-**REG NO:24006462**
+## EX NO: 11
 
-**EXP NO 11:SYNCHRONOUS-UP-COUNTER**
-
+### SYNCHRONOUS-UP-COUNTER
 
 **AIM:**
 
@@ -37,21 +35,38 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 
 **PROGRAM**
 
-![Screenshot 2024-12-26 113213](https://github.com/user-attachments/assets/e1b36cb9-c73f-40dc-8000-c467cf6d979f)
+/* Program for flipflops and verify its truth table in quartus using Verilog programming. 
 
+## Developed by: Jenittan Jose J B
+## RegisterNumber: 212224240063
+```
+module ex11(out,clk,rstn);
+input clk,rstn;
+output reg [3:0]out;
+always @ (posedge clk)
+begin
+   if(!rstn)
+     out<=0;
+   else 
+     out <= out+1;
+end
+endmodule
+```
+*/
 
 **RTL LOGIC UP COUNTER**
 
-![Screenshot 2024-12-26 113227](https://github.com/user-attachments/assets/5837c396-9464-4260-aaae-1edf161abfe9)
+![Screenshot 2025-05-05 103829](https://github.com/user-attachments/assets/852986f8-7172-4ac8-9e9b-277c87cc7b14)
+
 
 **TIMING DIAGRAM FOR IP COUNTER**
+![image](https://github.com/user-attachments/assets/2420cefc-403e-4d4b-8bdc-37082a7e3ada)
 
-![Screenshot 2024-12-26 113238](https://github.com/user-attachments/assets/1a3564cc-b923-4b7c-8c86-c2234581902f)
 
 **TRUTH TABLE**
-![Screenshot 2024-12-26 113318](https://github.com/user-attachments/assets/7e5659d2-0da9-45ba-8a00-a13408382d87)
+
+![image](https://github.com/user-attachments/assets/b4a83a35-33c1-468a-8068-fc4e233e2ecf)
 
 
 **RESULTS**
-
-Thus to implement 4 bit synchronous up counter and validate functionality done successfully.
+Hence a 4 bit synchronous up counter is implemented correctly
